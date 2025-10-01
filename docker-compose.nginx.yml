@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  procurex:
+    build: .
+    image: procurex:latest
+    container_name: procurex
+    environment:
+      - NODE_ENV=production
+      - PORT=4001
+      - JWT_SECRET=${JWT_SECRET:-change-me}
+      - APP_ORIGIN=https://${DOMAIN:-localhost}
+      - DB_FILE=/data/db.json
+    volumes:
+      - procurex-data:/data
+    networks:
+      - web
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: procurex-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - procurex
+    networks:
+      - web
+volumes:
+  procurex-data:
+    driver: local
+networks:
+  web:
+    driver: bridge

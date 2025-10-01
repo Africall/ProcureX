@@ -1,0 +1,3141 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Laptop Dell XPS 13",
+      "sku": "DX13-2020",
+      "quantity": 5,
+      "location": "Warehouse A",
+      "minStock": 5,
+      "maxStock": 10,
+      "unitPrice": 281,
+      "category": "Electronics",
+      "description": "High-quality laptop dell xps 13 for professional use",
+      "tags": [
+        "standard",
+        "certified",
+        "essential"
+      ],
+      "isActive": true,
+      "createdAt": "2025-09-04T01:11:48.424Z",
+      "updatedAt": "2025-09-26T07:22:56.389Z",
+      "supplierId": 1
+    },
+    {
+      "id": 2,
+      "name": "Logitech Mouse M720",
+      "sku": "LM-M720",
+      "quantity": 20,
+      "location": "Warehouse B",
+      "minStock": 5,
+      "maxStock": 40,
+      "unitPrice": 87,
+      "category": "Tools",
+      "description": "High-quality logitech mouse m720 for professional use",
+      "tags": [
+        "standard",
+        "certified",
+        "essential"
+      ],
+      "isActive": true,
+      "createdAt": "2025-09-10T08:41:53.866Z",
+      "updatedAt": "2025-09-26T07:22:56.389Z",
+      "supplierId": 1
+    },
+    {
+      "id": 3,
+      "name": "HP Monitor 24in",
+      "sku": "HP24",
+      "quantity": 8,
+      "location": "Warehouse A",
+      "minStock": 5,
+      "maxStock": 16,
+      "unitPrice": 234,
+      "category": "Safety",
+      "description": "High-quality hp monitor 24in for professional use",
+      "tags": [
+        "standard",
+        "certified",
+        "essential"
+      ],
+      "isActive": true,
+      "createdAt": "2025-09-01T08:46:22.855Z",
+      "updatedAt": "2025-09-26T07:22:56.389Z",
+      "supplierId": 1
+    }
+  ],
+  "lastId": 3,
+  "pendingPhoneCodes": [
+    {
+      "phone": "+254711255724",
+      "code": "666317",
+      "expires": 1758914716395
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "provider": "phone",
+      "providerId": "711255724",
+      "displayName": "711255724",
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "email": "u1758799422788@ex.com",
+      "passwordHash": "$2b$10$x7V9rrGVkHnWbNtNWRZEeOjeXzCctBkykCOBGPRtvOkSdkQ7KejRG",
+      "createdAt": "2025-09-25T11:23:43.098Z",
+      "updatedAt": "2025-09-25T11:23:43.542Z",
+      "displayName": "u1758799422788",
+      "sessionVersion": 2,
+      "role": "manager",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Maintenance",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "email": "c1758799423846@ex.com",
+      "passwordHash": "$2b$10$krc3YOilCrrKtqYUTAv8r.Tf0g30yjUbS5BpvxBIMxh7APk6lywla",
+      "createdAt": "2025-09-25T11:23:44.062Z",
+      "updatedAt": "2025-09-25T11:23:44.062Z",
+      "displayName": "c1758799423846",
+      "sessionVersion": 1,
+      "role": "technician",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Operations",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "email": "u1758799631789@ex.com",
+      "passwordHash": "$2b$10$Lw6H7Ha42fky474iI.d5LOuRnFheW5zsOsnpd45H.p.gRn35wvjLy",
+      "createdAt": "2025-09-25T11:27:12.046Z",
+      "updatedAt": "2025-09-25T11:27:12.423Z",
+      "displayName": "u1758799631789",
+      "sessionVersion": 2,
+      "role": "viewer",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Procurement",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "email": "c1758799632623@ex.com",
+      "passwordHash": "$2b$10$nx/HCsvsH80nJTD28UNrzO0Ff8fzn6Nwyqmv8I1gN2svkyrvaN/ae",
+      "createdAt": "2025-09-25T11:27:12.809Z",
+      "updatedAt": "2025-09-25T11:27:12.809Z",
+      "displayName": "c1758799632623",
+      "sessionVersion": 1,
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "email": "u1758805128465@ex.com",
+      "passwordHash": "$2b$10$S/3P2LSNl17.xY4dMrLR8Oy0wYTm1WuX6Nw2GAnZgpsBIdt9BhlAu",
+      "createdAt": "2025-09-25T12:58:48.577Z",
+      "updatedAt": "2025-09-25T12:58:48.745Z",
+      "displayName": "u1758805128465",
+      "sessionVersion": 2,
+      "role": "manager",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Maintenance",
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "email": "c1758805128850@ex.com",
+      "passwordHash": "$2b$10$cM.RzAHvyBb5YjYsBSCoTOpZd2EL3NBeHz8fnebLcN.ssV8ghiDYi",
+      "createdAt": "2025-09-25T12:58:48.930Z",
+      "updatedAt": "2025-09-25T12:58:48.930Z",
+      "displayName": "c1758805128850",
+      "sessionVersion": 1,
+      "role": "technician",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Operations",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "email": "u1758805239588@ex.com",
+      "passwordHash": "$2b$10$Mqim1MRvjDXQ1Lf7U4MdPOib18uL4ACuLUbW.hNgX0yyGOTIxEG7S",
+      "createdAt": "2025-09-25T13:00:39.724Z",
+      "updatedAt": "2025-09-25T13:00:39.928Z",
+      "displayName": "u1758805239588",
+      "sessionVersion": 2,
+      "role": "viewer",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Procurement",
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "email": "c1758805240055@ex.com",
+      "passwordHash": "$2b$10$1hwQ0yfHxg0GhV2IFzEmUeIABShMD0qV0unL/Mu5vLSxe5L0H2kXa",
+      "createdAt": "2025-09-25T13:00:40.156Z",
+      "updatedAt": "2025-09-25T13:00:40.156Z",
+      "displayName": "c1758805240055",
+      "sessionVersion": 1,
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "email": "u1758805254252@ex.com",
+      "passwordHash": "$2b$10$gDcNzTW8PzANwXUye1/WDuYF4B4W/kWrNeA3HaAMxLUdIjKdvGzXW",
+      "createdAt": "2025-09-25T13:00:54.386Z",
+      "updatedAt": "2025-09-25T13:00:54.577Z",
+      "displayName": "u1758805254252",
+      "sessionVersion": 2,
+      "role": "manager",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Maintenance",
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "email": "c1758805254696@ex.com",
+      "passwordHash": "$2b$10$qayGIkBjb0htWS7RWAATOeQfsdq/cU/ueEueljC/fopTup6AH/OFu",
+      "createdAt": "2025-09-25T13:00:54.784Z",
+      "updatedAt": "2025-09-25T13:00:54.784Z",
+      "displayName": "c1758805254696",
+      "sessionVersion": 1,
+      "role": "technician",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Operations",
+      "isActive": true
+    },
+    {
+      "id": 12,
+      "email": "u1758805284346@ex.com",
+      "passwordHash": "$2b$10$25oBr961N4TTFubsNS5Xm.m6BcJggmyhZOHHVf9YdCcZ2Jb3kL07.",
+      "createdAt": "2025-09-25T13:01:24.454Z",
+      "updatedAt": "2025-09-25T13:01:24.620Z",
+      "displayName": "u1758805284346",
+      "sessionVersion": 2,
+      "role": "viewer",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Procurement",
+      "isActive": true
+    },
+    {
+      "id": 13,
+      "email": "c1758805284721@ex.com",
+      "passwordHash": "$2b$10$eRGbDicur2aLXIQJUZX8rOPmJ33.J5sym1QvTR6s6aQq/O9MxCXuG",
+      "createdAt": "2025-09-25T13:01:24.797Z",
+      "updatedAt": "2025-09-25T13:01:24.797Z",
+      "displayName": "c1758805284721",
+      "sessionVersion": 1,
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 14,
+      "email": "joedgan12@gmail.com",
+      "passwordHash": "$2b$10$cC02HDXrNToKMTs84s8.g.3Mcgd1uTP8rbxCm9KvWL7/DnGLNZUw2",
+      "createdAt": "2025-09-25T13:16:09.405Z",
+      "updatedAt": "2025-09-25T13:16:09.405Z",
+      "displayName": "joedgan12",
+      "sessionVersion": 1,
+      "role": "manager",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Maintenance",
+      "isActive": true
+    },
+    {
+      "id": 15,
+      "email": "u1758867072698@ex.com",
+      "passwordHash": "$2b$10$jZLsZRgBzIKDc1f9wV/HoesT7iyEELMUgxSb2ErKlvXTCzvTJ2NZO",
+      "createdAt": "2025-09-26T06:11:12.988Z",
+      "updatedAt": "2025-09-26T06:11:13.434Z",
+      "displayName": "u1758867072698",
+      "sessionVersion": 2,
+      "role": "technician",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Operations",
+      "isActive": true
+    },
+    {
+      "id": 16,
+      "email": "c1758867073682@ex.com",
+      "passwordHash": "$2b$10$pM70//Yro027rBFmcOQz6exPs1MGVVfIH0i5j41QfdRvQ3U7bwm1q",
+      "createdAt": "2025-09-26T06:11:13.865Z",
+      "updatedAt": "2025-09-26T06:11:13.865Z",
+      "displayName": "c1758867073682",
+      "sessionVersion": 1,
+      "role": "viewer",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Procurement",
+      "isActive": true
+    },
+    {
+      "id": 17,
+      "email": "u1758867217096@ex.com",
+      "passwordHash": "$2b$10$utN3s3VpNChjHgB3M9ld1eYyGWWng0O5wrT1urjrulJW9c6UQJ/.W",
+      "createdAt": "2025-09-26T06:13:37.490Z",
+      "updatedAt": "2025-09-26T06:13:38.105Z",
+      "displayName": "u1758867217096",
+      "sessionVersion": 2,
+      "role": "admin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 18,
+      "email": "c1758867218496@ex.com",
+      "passwordHash": "$2b$10$DqAX6PQzx/GjoeU6w.OJzOWcDJK/nNCOCrvzQiZAHPwoGuDHT70q6",
+      "createdAt": "2025-09-26T06:13:38.710Z",
+      "updatedAt": "2025-09-26T06:13:38.710Z",
+      "displayName": "c1758867218496",
+      "sessionVersion": 1,
+      "role": "manager",
+      "firstName": "John",
+      "lastName": "Doe",
+      "department": "Maintenance",
+      "isActive": true
+    },
+    {
+      "id": 19,
+      "email": "joepackins@gmail.com",
+      "passwordHash": "$2b$10$i6Zcw9FgvaH3GdSI/iP07.rDMV0W6s7tsWstcV.BHLU3vS6IH.Srm",
+      "createdAt": "2025-09-26T07:53:53.037Z",
+      "updatedAt": "2025-09-26T07:53:53.037Z",
+      "displayName": "joepackins",
+      "sessionVersion": 1
+    },
+    {
+      "id": 20,
+      "provider": "password",
+      "email": "u1758912989411@ex.com",
+      "passwordHash": "$2b$10$TfW332OyBkud9b2UHk3c4uVRQWl9JsnxUEcQZOsRUdyOQVx3almBG",
+      "createdAt": "2025-09-26T18:56:29.738Z",
+      "updatedAt": "2025-09-26T18:56:30.187Z",
+      "displayName": "u1758912989411",
+      "sessionVersion": 2,
+      "role": "viewer",
+      "isActive": true
+    },
+    {
+      "id": 21,
+      "provider": "password",
+      "email": "c1758912990413@ex.com",
+      "passwordHash": "$2b$10$KuThfGVtGcj.oVMBMgvsPOpKbedx5B3zSzhNUtDyWzJDR4jLAHxri",
+      "createdAt": "2025-09-26T18:56:30.572Z",
+      "updatedAt": "2025-09-26T18:56:30.572Z",
+      "displayName": "c1758912990413",
+      "sessionVersion": 1,
+      "role": "viewer",
+      "isActive": true
+    }
+  ],
+  "lastUserId": 21,
+  "passwordResetTokens": [
+    {
+      "tokenHash": "6c123d75b1e3e51024e9c27b61265a0cd4a75331aa94009b54c182da89d22852",
+      "userId": 19,
+      "expires": 1758915241216
+    }
+  ],
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "Acme Supplies Inc",
+      "contactName": "Jane Miller",
+      "email": "sales@acme.com",
+      "phone": "+1 555-1000",
+      "address": "100 Main St",
+      "rating": 4,
+      "onTimeDeliveryRate": 91,
+      "qualityScore": 5,
+      "totalOrders": 23,
+      "totalValue": 137835,
+      "isActive": true,
+      "createdAt": "2025-07-29T01:41:17.043Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 2,
+      "name": "Global Parts Co",
+      "contactName": "Otto Lee",
+      "email": "contact@globalparts.co",
+      "phone": "+1 555-2000",
+      "address": "200 Oak Ave",
+      "rating": 5,
+      "onTimeDeliveryRate": 86,
+      "qualityScore": 5,
+      "totalOrders": 14,
+      "totalValue": 67737,
+      "isActive": true,
+      "createdAt": "2025-08-17T04:20:30.532Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    }
+  ],
+  "lastSupplierId": 2,
+  "purchaseOrders": [
+    {
+      "id": 1,
+      "orderNumber": "PO-0001",
+      "supplierId": 2,
+      "status": "pending",
+      "orderDate": "2025-09-08T22:18:29.587Z",
+      "expectedDeliveryDate": "2025-09-24T15:27:21.378Z",
+      "totalAmount": 8669,
+      "items": [
+        {
+          "id": 10,
+          "itemId": 1,
+          "quantity": 18,
+          "unitPrice": 281,
+          "totalPrice": 3653
+        },
+        {
+          "id": 11,
+          "itemId": 2,
+          "quantity": 21,
+          "unitPrice": 87,
+          "totalPrice": 1740
+        },
+        {
+          "id": 12,
+          "itemId": 3,
+          "quantity": 23,
+          "unitPrice": 234,
+          "totalPrice": 3276
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-09-08T22:18:29.587Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 2,
+      "orderNumber": "PO-0002",
+      "supplierId": 1,
+      "status": "shipped",
+      "orderDate": "2025-08-06T08:27:14.352Z",
+      "expectedDeliveryDate": "2025-08-20T05:01:58.776Z",
+      "totalAmount": 3372,
+      "items": [
+        {
+          "id": 20,
+          "itemId": 1,
+          "quantity": 23,
+          "unitPrice": 281,
+          "totalPrice": 3372
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-06T08:27:14.352Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 3,
+      "orderNumber": "PO-0003",
+      "supplierId": 2,
+      "status": "approved",
+      "orderDate": "2025-07-28T21:55:51.084Z",
+      "expectedDeliveryDate": "2025-08-09T06:28:20.089Z",
+      "totalAmount": 7293,
+      "items": [
+        {
+          "id": 30,
+          "itemId": 1,
+          "quantity": 8,
+          "unitPrice": 281,
+          "totalPrice": 5901
+        },
+        {
+          "id": 31,
+          "itemId": 2,
+          "quantity": 12,
+          "unitPrice": 87,
+          "totalPrice": 1392
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-07-28T21:55:51.084Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 4,
+      "orderNumber": "PO-0004",
+      "supplierId": 1,
+      "status": "cancelled",
+      "orderDate": "2025-08-17T23:55:53.937Z",
+      "expectedDeliveryDate": "2025-08-31T22:31:24.835Z",
+      "totalAmount": 4777,
+      "items": [
+        {
+          "id": 40,
+          "itemId": 1,
+          "quantity": 7,
+          "unitPrice": 281,
+          "totalPrice": 4777
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-17T23:55:53.937Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 5,
+      "orderNumber": "PO-0005",
+      "supplierId": 2,
+      "status": "shipped",
+      "orderDate": "2025-08-25T08:05:00.376Z",
+      "expectedDeliveryDate": "2025-09-06T21:45:24.648Z",
+      "totalAmount": 3988,
+      "items": [
+        {
+          "id": 50,
+          "itemId": 1,
+          "quantity": 24,
+          "unitPrice": 281,
+          "totalPrice": 2248
+        },
+        {
+          "id": 51,
+          "itemId": 2,
+          "quantity": 8,
+          "unitPrice": 87,
+          "totalPrice": 1740
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-25T08:05:00.376Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 6,
+      "orderNumber": "PO-0006",
+      "supplierId": 1,
+      "status": "received",
+      "orderDate": "2025-09-12T15:27:52.218Z",
+      "expectedDeliveryDate": "2025-09-23T19:22:44.061Z",
+      "actualDeliveryDate": "2025-09-24T19:20:37.658Z",
+      "totalAmount": 6704,
+      "items": [
+        {
+          "id": 60,
+          "itemId": 1,
+          "quantity": 24,
+          "unitPrice": 281,
+          "totalPrice": 6182
+        },
+        {
+          "id": 61,
+          "itemId": 2,
+          "quantity": 6,
+          "unitPrice": 87,
+          "totalPrice": 522
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "notes": "Urgent delivery required",
+      "createdAt": "2025-09-12T15:27:52.218Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 7,
+      "orderNumber": "PO-0007",
+      "supplierId": 2,
+      "status": "approved",
+      "orderDate": "2025-08-23T23:13:35.915Z",
+      "expectedDeliveryDate": "2025-09-08T05:50:48.286Z",
+      "totalAmount": 10015,
+      "items": [
+        {
+          "id": 70,
+          "itemId": 1,
+          "quantity": 20,
+          "unitPrice": 281,
+          "totalPrice": 6463
+        },
+        {
+          "id": 71,
+          "itemId": 2,
+          "quantity": 24,
+          "unitPrice": 87,
+          "totalPrice": 1914
+        },
+        {
+          "id": 72,
+          "itemId": 3,
+          "quantity": 17,
+          "unitPrice": 234,
+          "totalPrice": 1638
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-23T23:13:35.915Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 8,
+      "orderNumber": "PO-0008",
+      "supplierId": 1,
+      "status": "approved",
+      "orderDate": "2025-08-13T05:34:37.134Z",
+      "expectedDeliveryDate": "2025-08-20T18:19:52.948Z",
+      "totalAmount": 2810,
+      "items": [
+        {
+          "id": 80,
+          "itemId": 1,
+          "quantity": 9,
+          "unitPrice": 281,
+          "totalPrice": 2810
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-13T05:34:37.134Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 9,
+      "orderNumber": "PO-0009",
+      "supplierId": 2,
+      "status": "received",
+      "orderDate": "2025-08-17T21:36:26.504Z",
+      "expectedDeliveryDate": "2025-09-03T03:24:56.947Z",
+      "actualDeliveryDate": "2025-09-02T05:16:38.424Z",
+      "totalAmount": 5967,
+      "items": [
+        {
+          "id": 90,
+          "itemId": 1,
+          "quantity": 21,
+          "unitPrice": 281,
+          "totalPrice": 2529
+        },
+        {
+          "id": 91,
+          "itemId": 2,
+          "quantity": 11,
+          "unitPrice": 87,
+          "totalPrice": 1566
+        },
+        {
+          "id": 92,
+          "itemId": 3,
+          "quantity": 10,
+          "unitPrice": 234,
+          "totalPrice": 1872
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-08-17T21:36:26.504Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 10,
+      "orderNumber": "PO-0010",
+      "supplierId": 1,
+      "status": "draft",
+      "orderDate": "2025-09-16T18:47:38.503Z",
+      "expectedDeliveryDate": "2025-09-24T03:57:00.324Z",
+      "totalAmount": 7166,
+      "items": [
+        {
+          "id": 100,
+          "itemId": 1,
+          "quantity": 17,
+          "unitPrice": 281,
+          "totalPrice": 5339
+        },
+        {
+          "id": 101,
+          "itemId": 2,
+          "quantity": 5,
+          "unitPrice": 87,
+          "totalPrice": 1827
+        }
+      ],
+      "createdBy": 1,
+      "notes": "Urgent delivery required",
+      "createdAt": "2025-09-16T18:47:38.503Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 11,
+      "orderNumber": "PO-0011",
+      "supplierId": 2,
+      "status": "cancelled",
+      "orderDate": "2025-09-24T08:28:35.554Z",
+      "expectedDeliveryDate": "2025-10-06T19:01:54.244Z",
+      "totalAmount": 11979,
+      "items": [
+        {
+          "id": 110,
+          "itemId": 1,
+          "quantity": 23,
+          "unitPrice": 281,
+          "totalPrice": 5058
+        },
+        {
+          "id": 111,
+          "itemId": 2,
+          "quantity": 13,
+          "unitPrice": 87,
+          "totalPrice": 1305
+        },
+        {
+          "id": 112,
+          "itemId": 3,
+          "quantity": 16,
+          "unitPrice": 234,
+          "totalPrice": 5616
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-09-24T08:28:35.554Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 12,
+      "orderNumber": "PO-0012",
+      "supplierId": 1,
+      "status": "approved",
+      "orderDate": "2025-09-17T13:19:55.237Z",
+      "expectedDeliveryDate": "2025-09-23T04:45:50.103Z",
+      "totalAmount": 5366,
+      "items": [
+        {
+          "id": 120,
+          "itemId": 1,
+          "quantity": 7,
+          "unitPrice": 281,
+          "totalPrice": 4496
+        },
+        {
+          "id": 121,
+          "itemId": 2,
+          "quantity": 14,
+          "unitPrice": 87,
+          "totalPrice": 870
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-09-17T13:19:55.237Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 13,
+      "orderNumber": "PO-0013",
+      "supplierId": 2,
+      "status": "received",
+      "orderDate": "2025-08-15T21:53:43.763Z",
+      "expectedDeliveryDate": "2025-08-22T15:12:34.955Z",
+      "actualDeliveryDate": "2025-08-22T08:16:35.423Z",
+      "totalAmount": 1967,
+      "items": [
+        {
+          "id": 130,
+          "itemId": 1,
+          "quantity": 5,
+          "unitPrice": 281,
+          "totalPrice": 1967
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "notes": "Urgent delivery required",
+      "createdAt": "2025-08-15T21:53:43.763Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 14,
+      "orderNumber": "PO-0014",
+      "supplierId": 1,
+      "status": "received",
+      "orderDate": "2025-07-28T10:00:24.588Z",
+      "expectedDeliveryDate": "2025-08-11T06:09:14.477Z",
+      "actualDeliveryDate": "2025-08-11T04:13:50.487Z",
+      "totalAmount": 6463,
+      "items": [
+        {
+          "id": 140,
+          "itemId": 1,
+          "quantity": 11,
+          "unitPrice": 281,
+          "totalPrice": 6463
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "createdAt": "2025-07-28T10:00:24.588Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    },
+    {
+      "id": 15,
+      "orderNumber": "PO-0015",
+      "supplierId": 2,
+      "status": "shipped",
+      "orderDate": "2025-08-04T18:10:03.591Z",
+      "expectedDeliveryDate": "2025-08-09T03:48:39.577Z",
+      "totalAmount": 6182,
+      "items": [
+        {
+          "id": 150,
+          "itemId": 1,
+          "quantity": 16,
+          "unitPrice": 281,
+          "totalPrice": 6182
+        }
+      ],
+      "createdBy": 1,
+      "approvedBy": 2,
+      "notes": "Urgent delivery required",
+      "createdAt": "2025-08-04T18:10:03.591Z",
+      "updatedAt": "2025-09-26T07:22:56.390Z"
+    }
+  ],
+  "itemMovements": [
+    {
+      "id": 1,
+      "itemId": 3,
+      "type": "out",
+      "quantity": 4,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 18,
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-11T03:41:52.551Z"
+    },
+    {
+      "id": 2,
+      "itemId": 1,
+      "type": "adjustment",
+      "quantity": 8,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 13,
+      "referenceId": "WO-33",
+      "createdAt": "2025-09-26T02:21:26.803Z"
+    },
+    {
+      "id": 3,
+      "itemId": 3,
+      "type": "out",
+      "quantity": 9,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 18,
+      "createdAt": "2025-09-11T10:34:43.217Z"
+    },
+    {
+      "id": 4,
+      "itemId": 2,
+      "type": "transfer",
+      "quantity": 9,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse B",
+      "toLocation": "Warehouse B",
+      "userId": 7,
+      "referenceId": "WO-51",
+      "createdAt": "2025-08-30T05:06:56.809Z"
+    },
+    {
+      "id": 5,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 20,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 18,
+      "createdAt": "2025-09-25T14:06:12.491Z"
+    },
+    {
+      "id": 6,
+      "itemId": 3,
+      "type": "transfer",
+      "quantity": 16,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 2,
+      "createdAt": "2025-09-07T20:11:34.620Z"
+    },
+    {
+      "id": 7,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 4,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 13,
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-16T22:54:49.075Z"
+    },
+    {
+      "id": 8,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 8,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 7,
+      "referenceId": "WO-33",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-18T04:42:22.436Z"
+    },
+    {
+      "id": 9,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 3,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 5,
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-17T18:18:09.117Z"
+    },
+    {
+      "id": 10,
+      "itemId": 3,
+      "type": "adjustment",
+      "quantity": 4,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 11,
+      "referenceId": "WO-79",
+      "createdAt": "2025-09-17T02:07:47.661Z"
+    },
+    {
+      "id": 11,
+      "itemId": 3,
+      "type": "adjustment",
+      "quantity": 17,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 9,
+      "referenceId": "WO-37",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-04T06:02:36.654Z"
+    },
+    {
+      "id": 12,
+      "itemId": 3,
+      "type": "out",
+      "quantity": 8,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 7,
+      "referenceId": "WO-27",
+      "createdAt": "2025-09-11T10:43:35.878Z"
+    },
+    {
+      "id": 13,
+      "itemId": 1,
+      "type": "out",
+      "quantity": 3,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 8,
+      "createdAt": "2025-09-03T11:47:50.414Z"
+    },
+    {
+      "id": 14,
+      "itemId": 2,
+      "type": "out",
+      "quantity": 15,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse B",
+      "userId": 11,
+      "createdAt": "2025-09-06T12:43:27.262Z"
+    },
+    {
+      "id": 15,
+      "itemId": 2,
+      "type": "in",
+      "quantity": 17,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse B",
+      "userId": 5,
+      "referenceId": "WO-95",
+      "createdAt": "2025-09-07T18:13:38.652Z"
+    },
+    {
+      "id": 16,
+      "itemId": 1,
+      "type": "in",
+      "quantity": 6,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 6,
+      "createdAt": "2025-09-15T00:19:40.221Z"
+    },
+    {
+      "id": 17,
+      "itemId": 3,
+      "type": "out",
+      "quantity": 18,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 12,
+      "referenceId": "WO-43",
+      "createdAt": "2025-09-17T05:33:51.688Z"
+    },
+    {
+      "id": 18,
+      "itemId": 3,
+      "type": "in",
+      "quantity": 17,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 3,
+      "createdAt": "2025-09-03T18:34:35.887Z"
+    },
+    {
+      "id": 19,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 1,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 6,
+      "referenceId": "WO-75",
+      "createdAt": "2025-09-10T18:52:41.186Z"
+    },
+    {
+      "id": 20,
+      "itemId": 1,
+      "type": "out",
+      "quantity": 7,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 13,
+      "referenceId": "WO-90",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-19T20:29:21.607Z"
+    },
+    {
+      "id": 21,
+      "itemId": 2,
+      "type": "transfer",
+      "quantity": 1,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse B",
+      "toLocation": "Warehouse B",
+      "userId": 9,
+      "referenceId": "WO-29",
+      "createdAt": "2025-09-15T15:43:38.390Z"
+    },
+    {
+      "id": 22,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 17,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 4,
+      "referenceId": "WO-97",
+      "createdAt": "2025-08-28T22:52:15.553Z"
+    },
+    {
+      "id": 23,
+      "itemId": 1,
+      "type": "adjustment",
+      "quantity": 17,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 10,
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-14T14:58:20.573Z"
+    },
+    {
+      "id": 24,
+      "itemId": 2,
+      "type": "transfer",
+      "quantity": 1,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse B",
+      "toLocation": "Warehouse B",
+      "userId": 4,
+      "createdAt": "2025-09-12T01:44:06.227Z"
+    },
+    {
+      "id": 25,
+      "itemId": 1,
+      "type": "in",
+      "quantity": 17,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 14,
+      "referenceId": "WO-89",
+      "createdAt": "2025-09-14T09:49:53.536Z"
+    },
+    {
+      "id": 26,
+      "itemId": 3,
+      "type": "transfer",
+      "quantity": 12,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 3,
+      "referenceId": "WO-52",
+      "notes": "Emergency usage",
+      "createdAt": "2025-08-27T14:54:41.493Z"
+    },
+    {
+      "id": 27,
+      "itemId": 3,
+      "type": "adjustment",
+      "quantity": 19,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 18,
+      "referenceId": "WO-94",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-14T21:00:40.962Z"
+    },
+    {
+      "id": 28,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 7,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 17,
+      "referenceId": "WO-3",
+      "createdAt": "2025-09-12T05:34:31.598Z"
+    },
+    {
+      "id": 29,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 6,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 15,
+      "referenceId": "WO-43",
+      "createdAt": "2025-09-18T11:49:59.408Z"
+    },
+    {
+      "id": 30,
+      "itemId": 2,
+      "type": "transfer",
+      "quantity": 16,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse B",
+      "toLocation": "Warehouse B",
+      "userId": 16,
+      "createdAt": "2025-08-30T09:00:03.411Z"
+    },
+    {
+      "id": 31,
+      "itemId": 1,
+      "type": "in",
+      "quantity": 7,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 8,
+      "referenceId": "WO-70",
+      "createdAt": "2025-09-02T16:58:23.600Z"
+    },
+    {
+      "id": 32,
+      "itemId": 3,
+      "type": "adjustment",
+      "quantity": 8,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse A",
+      "userId": 17,
+      "createdAt": "2025-09-23T23:06:26.071Z"
+    },
+    {
+      "id": 33,
+      "itemId": 2,
+      "type": "out",
+      "quantity": 8,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse B",
+      "userId": 2,
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-08T00:25:31.031Z"
+    },
+    {
+      "id": 34,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 16,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 18,
+      "createdAt": "2025-09-03T00:47:33.415Z"
+    },
+    {
+      "id": 35,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 5,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 5,
+      "referenceId": "WO-18",
+      "createdAt": "2025-09-17T23:56:48.016Z"
+    },
+    {
+      "id": 36,
+      "itemId": 3,
+      "type": "in",
+      "quantity": 7,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 15,
+      "referenceId": "WO-73",
+      "createdAt": "2025-09-24T02:51:26.080Z"
+    },
+    {
+      "id": 37,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 16,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 16,
+      "referenceId": "WO-78",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-10T19:31:45.198Z"
+    },
+    {
+      "id": 38,
+      "itemId": 2,
+      "type": "out",
+      "quantity": 2,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse B",
+      "userId": 16,
+      "createdAt": "2025-09-20T01:35:51.085Z"
+    },
+    {
+      "id": 39,
+      "itemId": 3,
+      "type": "in",
+      "quantity": 18,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse A",
+      "userId": 17,
+      "createdAt": "2025-09-05T22:59:00.895Z"
+    },
+    {
+      "id": 40,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 3,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 15,
+      "createdAt": "2025-09-23T11:57:27.315Z"
+    },
+    {
+      "id": 41,
+      "itemId": 3,
+      "type": "transfer",
+      "quantity": 3,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 9,
+      "referenceId": "WO-65",
+      "createdAt": "2025-09-24T20:45:18.539Z"
+    },
+    {
+      "id": 42,
+      "itemId": 2,
+      "type": "transfer",
+      "quantity": 2,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse B",
+      "toLocation": "Warehouse B",
+      "userId": 18,
+      "createdAt": "2025-09-18T17:14:23.366Z"
+    },
+    {
+      "id": 43,
+      "itemId": 2,
+      "type": "out",
+      "quantity": 19,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse B",
+      "userId": 6,
+      "createdAt": "2025-09-06T02:51:29.167Z"
+    },
+    {
+      "id": 44,
+      "itemId": 2,
+      "type": "in",
+      "quantity": 6,
+      "reason": "Purchase order receipt",
+      "toLocation": "Warehouse B",
+      "userId": 10,
+      "referenceId": "WO-17",
+      "createdAt": "2025-09-18T07:12:25.960Z"
+    },
+    {
+      "id": 45,
+      "itemId": 3,
+      "type": "out",
+      "quantity": 9,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse A",
+      "userId": 12,
+      "referenceId": "WO-26",
+      "notes": "Emergency usage",
+      "createdAt": "2025-09-05T18:23:14.391Z"
+    },
+    {
+      "id": 46,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 14,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 8,
+      "referenceId": "WO-9",
+      "createdAt": "2025-08-27T15:14:28.277Z"
+    },
+    {
+      "id": 47,
+      "itemId": 2,
+      "type": "out",
+      "quantity": 20,
+      "reason": "Work order consumption",
+      "toLocation": "Warehouse B",
+      "userId": 14,
+      "createdAt": "2025-08-28T17:26:49.000Z"
+    },
+    {
+      "id": 48,
+      "itemId": 1,
+      "type": "transfer",
+      "quantity": 14,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 12,
+      "createdAt": "2025-09-23T19:18:10.340Z"
+    },
+    {
+      "id": 49,
+      "itemId": 2,
+      "type": "adjustment",
+      "quantity": 5,
+      "reason": "Inventory count correction",
+      "toLocation": "Warehouse B",
+      "userId": 12,
+      "referenceId": "WO-13",
+      "createdAt": "2025-09-20T14:06:10.272Z"
+    },
+    {
+      "id": 50,
+      "itemId": 3,
+      "type": "transfer",
+      "quantity": 11,
+      "reason": "Location transfer",
+      "fromLocation": "Warehouse A",
+      "toLocation": "Warehouse B",
+      "userId": 13,
+      "referenceId": "WO-78",
+      "createdAt": "2025-09-03T00:09:34.250Z"
+    }
+  ],
+  "workOrders": [
+    {
+      "id": 1,
+      "orderNumber": "WO-0001",
+      "title": "Repair System B",
+      "description": "Maintenance work required for breakdown repair",
+      "status": "completed",
+      "priority": "low",
+      "assignedTo": 7,
+      "requestedBy": 1,
+      "estimatedHours": 3,
+      "actualHours": 3.1648424414736875,
+      "itemsUsed": [],
+      "completedAt": "2025-09-21T14:40:43.740Z",
+      "createdAt": "2025-09-09T22:36:57.432Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 2,
+      "orderNumber": "WO-0002",
+      "title": "Repair Component C",
+      "description": "Maintenance work required for preventive maintenance",
+      "status": "in-progress",
+      "priority": "critical",
+      "assignedTo": 11,
+      "requestedBy": 1,
+      "estimatedHours": 1,
+      "itemsUsed": [
+        {
+          "id": 20,
+          "itemId": 1,
+          "quantityUsed": 3,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-08-31T05:35:39.228Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 3,
+      "orderNumber": "WO-0003",
+      "title": "Repair Device D",
+      "description": "Maintenance work required for emergency fix",
+      "status": "completed",
+      "priority": "high",
+      "assignedTo": 15,
+      "requestedBy": 1,
+      "estimatedHours": 5,
+      "actualHours": 5.362417141830787,
+      "itemsUsed": [
+        {
+          "id": 30,
+          "itemId": 1,
+          "quantityUsed": 2,
+          "unitCost": 281
+        }
+      ],
+      "completedAt": "2025-09-20T04:31:54.307Z",
+      "createdAt": "2025-08-28T17:15:11.661Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 4,
+      "orderNumber": "WO-0004",
+      "title": "Repair Equipment A",
+      "description": "Maintenance work required for routine inspection",
+      "status": "cancelled",
+      "priority": "high",
+      "assignedTo": 3,
+      "requestedBy": 1,
+      "estimatedHours": 5,
+      "itemsUsed": [],
+      "createdAt": "2025-08-28T03:58:41.005Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 5,
+      "orderNumber": "WO-0005",
+      "title": "Repair System B",
+      "description": "Maintenance work required for breakdown repair",
+      "status": "open",
+      "priority": "high",
+      "assignedTo": 7,
+      "requestedBy": 1,
+      "estimatedHours": 7,
+      "itemsUsed": [
+        {
+          "id": 50,
+          "itemId": 1,
+          "quantityUsed": 3,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-08-31T08:53:14.254Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 6,
+      "orderNumber": "WO-0006",
+      "title": "Repair Component C",
+      "description": "Maintenance work required for preventive maintenance",
+      "status": "open",
+      "priority": "low",
+      "assignedTo": 11,
+      "requestedBy": 1,
+      "estimatedHours": 4,
+      "itemsUsed": [
+        {
+          "id": 60,
+          "itemId": 1,
+          "quantityUsed": 2,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-09-05T13:36:14.181Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 7,
+      "orderNumber": "WO-0007",
+      "title": "Repair Device D",
+      "description": "Maintenance work required for emergency fix",
+      "status": "in-progress",
+      "priority": "high",
+      "assignedTo": 15,
+      "requestedBy": 1,
+      "estimatedHours": 8,
+      "itemsUsed": [],
+      "createdAt": "2025-09-18T17:46:19.765Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 8,
+      "orderNumber": "WO-0008",
+      "title": "Repair Equipment A",
+      "description": "Maintenance work required for routine inspection",
+      "status": "open",
+      "priority": "high",
+      "assignedTo": 3,
+      "requestedBy": 1,
+      "estimatedHours": 7,
+      "itemsUsed": [],
+      "createdAt": "2025-09-22T12:16:44.676Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 9,
+      "orderNumber": "WO-0009",
+      "title": "Repair System B",
+      "description": "Maintenance work required for breakdown repair",
+      "status": "in-progress",
+      "priority": "high",
+      "assignedTo": 7,
+      "requestedBy": 1,
+      "estimatedHours": 1,
+      "itemsUsed": [],
+      "createdAt": "2025-09-02T05:40:57.229Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 10,
+      "orderNumber": "WO-0010",
+      "title": "Repair Component C",
+      "description": "Maintenance work required for preventive maintenance",
+      "status": "completed",
+      "priority": "critical",
+      "assignedTo": 11,
+      "requestedBy": 1,
+      "estimatedHours": 2,
+      "actualHours": 1.792586319052595,
+      "itemsUsed": [],
+      "completedAt": "2025-09-23T02:19:38.649Z",
+      "createdAt": "2025-09-21T05:07:41.417Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 11,
+      "orderNumber": "WO-0011",
+      "title": "Repair Device D",
+      "description": "Maintenance work required for emergency fix",
+      "status": "completed",
+      "priority": "medium",
+      "assignedTo": 15,
+      "requestedBy": 1,
+      "estimatedHours": 8,
+      "actualHours": 7.479060248173184,
+      "itemsUsed": [
+        {
+          "id": 110,
+          "itemId": 1,
+          "quantityUsed": 5,
+          "unitCost": 281
+        }
+      ],
+      "completedAt": "2025-09-21T23:54:50.547Z",
+      "createdAt": "2025-09-19T09:10:06.875Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 12,
+      "orderNumber": "WO-0012",
+      "title": "Repair Equipment A",
+      "description": "Maintenance work required for routine inspection",
+      "status": "in-progress",
+      "priority": "high",
+      "assignedTo": 3,
+      "requestedBy": 1,
+      "estimatedHours": 2,
+      "itemsUsed": [],
+      "createdAt": "2025-09-04T16:59:12.621Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 13,
+      "orderNumber": "WO-0013",
+      "title": "Repair System B",
+      "description": "Maintenance work required for breakdown repair",
+      "status": "open",
+      "priority": "critical",
+      "assignedTo": 7,
+      "requestedBy": 1,
+      "estimatedHours": 1,
+      "itemsUsed": [
+        {
+          "id": 130,
+          "itemId": 1,
+          "quantityUsed": 2,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-09-03T08:20:31.901Z",
+      "updatedAt": "2025-09-26T07:22:56.391Z"
+    },
+    {
+      "id": 14,
+      "orderNumber": "WO-0014",
+      "title": "Repair Component C",
+      "description": "Maintenance work required for preventive maintenance",
+      "status": "in-progress",
+      "priority": "medium",
+      "assignedTo": 11,
+      "requestedBy": 1,
+      "estimatedHours": 1,
+      "itemsUsed": [],
+      "createdAt": "2025-09-12T13:04:52.853Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 15,
+      "orderNumber": "WO-0015",
+      "title": "Repair Device D",
+      "description": "Maintenance work required for emergency fix",
+      "status": "open",
+      "priority": "medium",
+      "assignedTo": 15,
+      "requestedBy": 1,
+      "estimatedHours": 8,
+      "itemsUsed": [],
+      "createdAt": "2025-09-22T07:05:53.572Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 16,
+      "orderNumber": "WO-0016",
+      "title": "Repair Equipment A",
+      "description": "Maintenance work required for routine inspection",
+      "status": "completed",
+      "priority": "high",
+      "assignedTo": 3,
+      "requestedBy": 1,
+      "estimatedHours": 8,
+      "actualHours": 7.195220795794539,
+      "itemsUsed": [
+        {
+          "id": 160,
+          "itemId": 1,
+          "quantityUsed": 3,
+          "unitCost": 281
+        },
+        {
+          "id": 161,
+          "itemId": 2,
+          "quantityUsed": 4,
+          "unitCost": 87
+        }
+      ],
+      "completedAt": "2025-09-22T20:23:26.435Z",
+      "createdAt": "2025-09-12T19:25:04.927Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 17,
+      "orderNumber": "WO-0017",
+      "title": "Repair System B",
+      "description": "Maintenance work required for breakdown repair",
+      "status": "completed",
+      "priority": "high",
+      "assignedTo": 7,
+      "requestedBy": 1,
+      "estimatedHours": 6,
+      "actualHours": 6.433260854475309,
+      "itemsUsed": [
+        {
+          "id": 170,
+          "itemId": 1,
+          "quantityUsed": 3,
+          "unitCost": 281
+        }
+      ],
+      "completedAt": "2025-09-22T01:07:43.943Z",
+      "createdAt": "2025-09-18T05:16:59.975Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 18,
+      "orderNumber": "WO-0018",
+      "title": "Repair Component C",
+      "description": "Maintenance work required for preventive maintenance",
+      "status": "open",
+      "priority": "high",
+      "assignedTo": 11,
+      "requestedBy": 1,
+      "estimatedHours": 4,
+      "itemsUsed": [
+        {
+          "id": 180,
+          "itemId": 1,
+          "quantityUsed": 2,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-09-21T12:45:36.999Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 19,
+      "orderNumber": "WO-0019",
+      "title": "Repair Device D",
+      "description": "Maintenance work required for emergency fix",
+      "status": "cancelled",
+      "priority": "critical",
+      "assignedTo": 15,
+      "requestedBy": 1,
+      "estimatedHours": 2,
+      "itemsUsed": [],
+      "createdAt": "2025-09-05T05:03:05.609Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    },
+    {
+      "id": 20,
+      "orderNumber": "WO-0020",
+      "title": "Repair Equipment A",
+      "description": "Maintenance work required for routine inspection",
+      "status": "in-progress",
+      "priority": "low",
+      "assignedTo": 3,
+      "requestedBy": 1,
+      "estimatedHours": 6,
+      "itemsUsed": [
+        {
+          "id": 200,
+          "itemId": 1,
+          "quantityUsed": 4,
+          "unitCost": 281
+        }
+      ],
+      "createdAt": "2025-09-02T08:28:22.420Z",
+      "updatedAt": "2025-09-26T07:22:56.392Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "type": "delivery_delay",
+      "severity": "critical",
+      "title": "Delivery Delay",
+      "description": "delivery delay detected requiring attention",
+      "isRead": true,
+      "isResolved": false,
+      "createdAt": "2025-09-22T00:58:24.636Z"
+    },
+    {
+      "id": 2,
+      "type": "quality_issue",
+      "severity": "error",
+      "title": "Quality Issue Reported",
+      "description": "quality issue detected requiring attention",
+      "isRead": false,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-22T07:00:59.275Z"
+    },
+    {
+      "id": 3,
+      "type": "expired",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "isRead": true,
+      "isResolved": false,
+      "createdAt": "2025-09-19T07:58:56.000Z"
+    },
+    {
+      "id": 4,
+      "type": "system",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "supplierId": 1,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "resolvedAt": "2025-09-24T22:30:05.788Z",
+      "createdAt": "2025-09-24T11:35:24.890Z"
+    },
+    {
+      "id": 5,
+      "type": "delivery_delay",
+      "severity": "warning",
+      "title": "Delivery Delay",
+      "description": "delivery delay detected requiring attention",
+      "itemId": 1,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-25T01:01:20.379Z"
+    },
+    {
+      "id": 6,
+      "type": "system",
+      "severity": "critical",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "isRead": true,
+      "isResolved": false,
+      "resolvedAt": "2025-09-26T01:50:48.071Z",
+      "createdAt": "2025-09-25T07:09:55.575Z"
+    },
+    {
+      "id": 7,
+      "type": "system",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "itemId": 2,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedAt": "2025-09-22T19:59:49.335Z",
+      "createdAt": "2025-09-21T00:13:26.485Z"
+    },
+    {
+      "id": 8,
+      "type": "expired",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "itemId": 1,
+      "isRead": true,
+      "isResolved": false,
+      "createdAt": "2025-09-20T15:24:19.432Z"
+    },
+    {
+      "id": 9,
+      "type": "delivery_delay",
+      "severity": "error",
+      "title": "Delivery Delay",
+      "description": "delivery delay detected requiring attention",
+      "orderId": 4,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-22T20:19:38.475Z"
+    },
+    {
+      "id": 10,
+      "type": "expired",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "itemId": 3,
+      "supplierId": 2,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "resolvedAt": "2025-09-25T15:01:49.224Z",
+      "createdAt": "2025-09-25T06:14:41.929Z"
+    },
+    {
+      "id": 11,
+      "type": "system",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "itemId": 2,
+      "isRead": true,
+      "isResolved": true,
+      "resolvedBy": 1,
+      "resolvedAt": "2025-09-21T15:23:13.950Z",
+      "createdAt": "2025-09-25T23:39:47.868Z"
+    },
+    {
+      "id": 12,
+      "type": "quality_issue",
+      "severity": "critical",
+      "title": "Quality Issue Reported",
+      "description": "quality issue detected requiring attention",
+      "itemId": 1,
+      "supplierId": 1,
+      "isRead": true,
+      "isResolved": true,
+      "resolvedAt": "2025-09-22T02:01:37.359Z",
+      "createdAt": "2025-09-19T17:05:12.888Z"
+    },
+    {
+      "id": 13,
+      "type": "system",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "orderId": 3,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedAt": "2025-09-22T16:50:07.264Z",
+      "createdAt": "2025-09-20T08:33:43.217Z"
+    },
+    {
+      "id": 14,
+      "type": "expired",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "supplierId": 2,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-20T16:49:12.354Z"
+    },
+    {
+      "id": 15,
+      "type": "delivery_delay",
+      "severity": "warning",
+      "title": "Delivery Delay",
+      "description": "delivery delay detected requiring attention",
+      "itemId": 2,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedAt": "2025-09-22T08:38:35.725Z",
+      "createdAt": "2025-09-23T09:22:33.915Z"
+    },
+    {
+      "id": 16,
+      "type": "low_stock",
+      "severity": "critical",
+      "title": "Low Stock Alert",
+      "description": "low stock detected requiring attention",
+      "itemId": 1,
+      "isRead": true,
+      "isResolved": false,
+      "createdAt": "2025-09-20T20:23:32.585Z"
+    },
+    {
+      "id": 17,
+      "type": "delivery_delay",
+      "severity": "info",
+      "title": "Delivery Delay",
+      "description": "delivery delay detected requiring attention",
+      "itemId": 1,
+      "isRead": true,
+      "isResolved": true,
+      "createdAt": "2025-09-23T04:07:03.191Z"
+    },
+    {
+      "id": 18,
+      "type": "overstock",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "overstock detected requiring attention",
+      "isRead": true,
+      "isResolved": true,
+      "resolvedAt": "2025-09-24T10:42:52.046Z",
+      "createdAt": "2025-09-25T13:14:04.015Z"
+    },
+    {
+      "id": 19,
+      "type": "quality_issue",
+      "severity": "warning",
+      "title": "Quality Issue Reported",
+      "description": "quality issue detected requiring attention",
+      "supplierId": 1,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedAt": "2025-09-25T16:23:13.918Z",
+      "createdAt": "2025-09-23T15:19:32.616Z"
+    },
+    {
+      "id": 20,
+      "type": "quality_issue",
+      "severity": "info",
+      "title": "Quality Issue Reported",
+      "description": "quality issue detected requiring attention",
+      "isRead": true,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-25T08:34:48.476Z"
+    },
+    {
+      "id": 21,
+      "type": "expired",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "itemId": 1,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedAt": "2025-09-25T12:48:11.806Z",
+      "createdAt": "2025-09-22T20:58:18.169Z"
+    },
+    {
+      "id": 22,
+      "type": "quality_issue",
+      "severity": "info",
+      "title": "Quality Issue Reported",
+      "description": "quality issue detected requiring attention",
+      "itemId": 1,
+      "supplierId": 2,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedAt": "2025-09-25T11:41:51.440Z",
+      "createdAt": "2025-09-26T01:07:07.673Z"
+    },
+    {
+      "id": 23,
+      "type": "system",
+      "severity": "info",
+      "title": "System Alert",
+      "description": "system detected requiring attention",
+      "supplierId": 2,
+      "isRead": true,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "resolvedAt": "2025-09-25T13:18:18.139Z",
+      "createdAt": "2025-09-20T21:04:31.538Z"
+    },
+    {
+      "id": 24,
+      "type": "expired",
+      "severity": "warning",
+      "title": "System Alert",
+      "description": "expired detected requiring attention",
+      "supplierId": 1,
+      "isRead": false,
+      "isResolved": false,
+      "resolvedBy": 1,
+      "createdAt": "2025-09-23T09:11:48.079Z"
+    },
+    {
+      "id": 25,
+      "type": "overstock",
+      "severity": "critical",
+      "title": "System Alert",
+      "description": "overstock detected requiring attention",
+      "orderId": 7,
+      "isRead": true,
+      "isResolved": true,
+      "createdAt": "2025-09-22T21:26:52.164Z"
+    }
+  ],
+  "systemEvents": [
+    {
+      "id": 1,
+      "type": "item_updated",
+      "userId": 5,
+      "entityId": "48",
+      "entityType": "supplier",
+      "description": "item updated event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.116",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-06T23:35:17.284Z"
+    },
+    {
+      "id": 2,
+      "type": "order_placed",
+      "userId": 9,
+      "entityType": "item",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.69",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-20T11:42:02.548Z"
+    },
+    {
+      "id": 3,
+      "type": "item_updated",
+      "userId": 3,
+      "entityId": "21",
+      "entityType": "order",
+      "description": "item updated event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.163",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-24T21:40:43.124Z"
+    },
+    {
+      "id": 4,
+      "type": "user_login",
+      "userId": 8,
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.35",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-14T23:41:13.871Z"
+    },
+    {
+      "id": 5,
+      "type": "stock_movement",
+      "userId": 17,
+      "entityType": "item",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.91",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T07:56:46.319Z"
+    },
+    {
+      "id": 6,
+      "type": "item_updated",
+      "userId": 14,
+      "entityId": "51",
+      "description": "item updated event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.236",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T19:35:52.760Z"
+    },
+    {
+      "id": 7,
+      "type": "system_error",
+      "userId": 4,
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.199",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-03T22:42:39.795Z"
+    },
+    {
+      "id": 8,
+      "type": "order_placed",
+      "userId": 10,
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.21",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T16:45:43.657Z"
+    },
+    {
+      "id": 9,
+      "type": "system_error",
+      "userId": 14,
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.172",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-20T09:49:08.313Z"
+    },
+    {
+      "id": 10,
+      "type": "user_login",
+      "userId": 4,
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.10",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T13:03:32.758Z"
+    },
+    {
+      "id": 11,
+      "type": "user_login",
+      "userId": 6,
+      "entityType": "item",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.225",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-06T21:40:54.248Z"
+    },
+    {
+      "id": 12,
+      "type": "order_placed",
+      "userId": 13,
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.67",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-17T21:56:54.216Z"
+    },
+    {
+      "id": 13,
+      "type": "item_updated",
+      "userId": 11,
+      "entityType": "order",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.103",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-19T11:04:35.890Z"
+    },
+    {
+      "id": 14,
+      "type": "user_login",
+      "userId": 18,
+      "entityId": "52",
+      "entityType": "item",
+      "description": "user login event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.13",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-24T15:17:35.014Z"
+    },
+    {
+      "id": 15,
+      "type": "order_received",
+      "userId": 3,
+      "entityId": "82",
+      "entityType": "supplier",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.184",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T16:46:00.202Z"
+    },
+    {
+      "id": 16,
+      "type": "user_login",
+      "userId": 6,
+      "entityId": "60",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.9",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-15T15:30:08.484Z"
+    },
+    {
+      "id": 17,
+      "type": "item_updated",
+      "entityId": "94",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.136",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-30T09:26:41.364Z"
+    },
+    {
+      "id": 18,
+      "type": "stock_movement",
+      "entityId": "6",
+      "entityType": "item",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.2",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T22:13:48.404Z"
+    },
+    {
+      "id": 19,
+      "type": "item_created",
+      "entityId": "26",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.144",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T03:42:58.036Z"
+    },
+    {
+      "id": 20,
+      "type": "order_placed",
+      "userId": 7,
+      "entityId": "4",
+      "description": "order placed event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.217",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T20:28:34.114Z"
+    },
+    {
+      "id": 21,
+      "type": "item_created",
+      "userId": 6,
+      "entityId": "76",
+      "entityType": "order",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.99",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-12T16:09:54.491Z"
+    },
+    {
+      "id": 22,
+      "type": "order_placed",
+      "userId": 11,
+      "entityId": "32",
+      "entityType": "order",
+      "description": "order placed event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.171",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-15T06:04:33.525Z"
+    },
+    {
+      "id": 23,
+      "type": "order_received",
+      "entityId": "43",
+      "entityType": "order",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.113",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-17T04:58:13.091Z"
+    },
+    {
+      "id": 24,
+      "type": "item_updated",
+      "userId": 15,
+      "entityId": "18",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.195",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-24T11:58:39.440Z"
+    },
+    {
+      "id": 25,
+      "type": "stock_movement",
+      "userId": 1,
+      "entityId": "95",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.41",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-31T21:54:34.503Z"
+    },
+    {
+      "id": 26,
+      "type": "user_login",
+      "userId": 7,
+      "description": "user login event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.24",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-09T00:07:07.224Z"
+    },
+    {
+      "id": 27,
+      "type": "item_updated",
+      "userId": 5,
+      "entityType": "supplier",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.67",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-16T07:18:19.918Z"
+    },
+    {
+      "id": 28,
+      "type": "order_placed",
+      "userId": 12,
+      "entityId": "58",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.92",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-01T08:38:50.653Z"
+    },
+    {
+      "id": 29,
+      "type": "system_error",
+      "userId": 18,
+      "entityType": "supplier",
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.132",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-17T07:13:18.075Z"
+    },
+    {
+      "id": 30,
+      "type": "order_placed",
+      "userId": 13,
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.85",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-10T00:55:55.054Z"
+    },
+    {
+      "id": 31,
+      "type": "order_placed",
+      "userId": 1,
+      "entityId": "49",
+      "entityType": "supplier",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.81",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T06:33:08.798Z"
+    },
+    {
+      "id": 32,
+      "type": "item_created",
+      "userId": 3,
+      "entityType": "supplier",
+      "description": "item created event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.129",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-08T20:14:25.033Z"
+    },
+    {
+      "id": 33,
+      "type": "item_created",
+      "userId": 18,
+      "entityId": "1",
+      "description": "item created event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.59",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T01:50:35.041Z"
+    },
+    {
+      "id": 34,
+      "type": "user_login",
+      "userId": 2,
+      "description": "user login event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.36",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T22:39:36.995Z"
+    },
+    {
+      "id": 35,
+      "type": "order_received",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.139",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-06T16:37:26.596Z"
+    },
+    {
+      "id": 36,
+      "type": "stock_movement",
+      "userId": 5,
+      "entityId": "9",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.167",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-08T04:28:48.670Z"
+    },
+    {
+      "id": 37,
+      "type": "order_received",
+      "userId": 3,
+      "entityType": "item",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.214",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T14:04:57.657Z"
+    },
+    {
+      "id": 38,
+      "type": "stock_movement",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.160",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-18T02:43:36.406Z"
+    },
+    {
+      "id": 39,
+      "type": "order_received",
+      "userId": 13,
+      "entityType": "order",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.7",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-03T18:28:12.184Z"
+    },
+    {
+      "id": 40,
+      "type": "item_created",
+      "userId": 15,
+      "entityId": "46",
+      "entityType": "order",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.212",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T03:54:10.328Z"
+    },
+    {
+      "id": 41,
+      "type": "stock_movement",
+      "userId": 7,
+      "entityId": "33",
+      "entityType": "supplier",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.158",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-20T17:52:25.779Z"
+    },
+    {
+      "id": 42,
+      "type": "user_login",
+      "userId": 2,
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.190",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T07:46:46.706Z"
+    },
+    {
+      "id": 43,
+      "type": "stock_movement",
+      "userId": 17,
+      "entityId": "26",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.69",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-06T20:04:27.948Z"
+    },
+    {
+      "id": 44,
+      "type": "stock_movement",
+      "userId": 9,
+      "entityId": "62",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.127",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-01T06:13:26.313Z"
+    },
+    {
+      "id": 45,
+      "type": "stock_movement",
+      "entityId": "84",
+      "entityType": "supplier",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.36",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-19T22:07:54.059Z"
+    },
+    {
+      "id": 46,
+      "type": "item_created",
+      "userId": 9,
+      "entityId": "78",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.107",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-27T22:22:47.223Z"
+    },
+    {
+      "id": 47,
+      "type": "system_error",
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.5",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-25T21:04:46.420Z"
+    },
+    {
+      "id": 48,
+      "type": "order_placed",
+      "userId": 9,
+      "entityId": "52",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.54",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-19T21:12:35.182Z"
+    },
+    {
+      "id": 49,
+      "type": "stock_movement",
+      "userId": 17,
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.105",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-19T09:16:31.608Z"
+    },
+    {
+      "id": 50,
+      "type": "item_created",
+      "userId": 7,
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.70",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-25T08:26:14.555Z"
+    },
+    {
+      "id": 51,
+      "type": "order_received",
+      "userId": 9,
+      "entityId": "73",
+      "description": "order received event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.226",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T01:51:20.450Z"
+    },
+    {
+      "id": 52,
+      "type": "stock_movement",
+      "userId": 5,
+      "entityType": "order",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.80",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T09:46:51.255Z"
+    },
+    {
+      "id": 53,
+      "type": "user_login",
+      "userId": 2,
+      "entityId": "50",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.16",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-10T05:23:22.738Z"
+    },
+    {
+      "id": 54,
+      "type": "order_placed",
+      "userId": 12,
+      "entityId": "35",
+      "entityType": "order",
+      "description": "order placed event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.119",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-09T14:57:28.921Z"
+    },
+    {
+      "id": 55,
+      "type": "item_created",
+      "userId": 1,
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.2",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T20:23:24.254Z"
+    },
+    {
+      "id": 56,
+      "type": "order_received",
+      "userId": 2,
+      "entityType": "item",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.88",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-31T11:30:21.016Z"
+    },
+    {
+      "id": 57,
+      "type": "item_updated",
+      "userId": 5,
+      "entityId": "85",
+      "entityType": "order",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.115",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-16T06:25:48.807Z"
+    },
+    {
+      "id": 58,
+      "type": "order_received",
+      "entityId": "37",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.124",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T11:57:04.069Z"
+    },
+    {
+      "id": 59,
+      "type": "item_created",
+      "userId": 10,
+      "entityId": "58",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.48",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-03T17:20:37.917Z"
+    },
+    {
+      "id": 60,
+      "type": "user_login",
+      "userId": 13,
+      "entityId": "63",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.189",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T00:12:33.717Z"
+    },
+    {
+      "id": 61,
+      "type": "stock_movement",
+      "userId": 2,
+      "entityId": "8",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.32",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-28T23:02:43.852Z"
+    },
+    {
+      "id": 62,
+      "type": "order_placed",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.90",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T19:16:11.481Z"
+    },
+    {
+      "id": 63,
+      "type": "system_error",
+      "userId": 4,
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.83",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-03T08:14:30.543Z"
+    },
+    {
+      "id": 64,
+      "type": "item_created",
+      "userId": 4,
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.67",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-09T04:45:16.928Z"
+    },
+    {
+      "id": 65,
+      "type": "item_updated",
+      "userId": 3,
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.197",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T22:11:14.482Z"
+    },
+    {
+      "id": 66,
+      "type": "stock_movement",
+      "userId": 7,
+      "entityId": "94",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.60",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-25T14:54:45.297Z"
+    },
+    {
+      "id": 67,
+      "type": "stock_movement",
+      "entityId": "53",
+      "entityType": "supplier",
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.247",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-17T10:51:41.437Z"
+    },
+    {
+      "id": 68,
+      "type": "order_placed",
+      "entityType": "supplier",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.7",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-11T07:04:18.784Z"
+    },
+    {
+      "id": 69,
+      "type": "item_updated",
+      "userId": 5,
+      "entityId": "16",
+      "description": "item updated event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.162",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-20T12:38:52.083Z"
+    },
+    {
+      "id": 70,
+      "type": "user_login",
+      "userId": 3,
+      "entityType": "order",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.180",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-18T04:46:31.621Z"
+    },
+    {
+      "id": 71,
+      "type": "stock_movement",
+      "userId": 13,
+      "description": "stock movement event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.192",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-16T22:45:42.361Z"
+    },
+    {
+      "id": 72,
+      "type": "system_error",
+      "entityType": "order",
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.106",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-07T13:25:28.591Z"
+    },
+    {
+      "id": 73,
+      "type": "item_updated",
+      "userId": 2,
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.143",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-24T16:14:29.688Z"
+    },
+    {
+      "id": 74,
+      "type": "item_updated",
+      "userId": 9,
+      "entityId": "4",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.239",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T23:14:45.827Z"
+    },
+    {
+      "id": 75,
+      "type": "system_error",
+      "userId": 10,
+      "entityType": "order",
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.163",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-03T17:57:01.815Z"
+    },
+    {
+      "id": 76,
+      "type": "stock_movement",
+      "userId": 1,
+      "entityId": "41",
+      "entityType": "supplier",
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.30",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-12T14:41:00.474Z"
+    },
+    {
+      "id": 77,
+      "type": "stock_movement",
+      "userId": 9,
+      "description": "stock movement event logged",
+      "ipAddress": "192.168.1.242",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-31T13:41:13.456Z"
+    },
+    {
+      "id": 78,
+      "type": "system_error",
+      "userId": 2,
+      "entityId": "90",
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.7",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-13T17:07:12.782Z"
+    },
+    {
+      "id": 79,
+      "type": "item_updated",
+      "userId": 12,
+      "entityType": "item",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.222",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-31T07:32:27.513Z"
+    },
+    {
+      "id": 80,
+      "type": "item_created",
+      "userId": 8,
+      "entityId": "61",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.205",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T19:32:03.959Z"
+    },
+    {
+      "id": 81,
+      "type": "order_placed",
+      "userId": 3,
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.148",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T13:26:32.358Z"
+    },
+    {
+      "id": 82,
+      "type": "order_placed",
+      "entityId": "12",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.191",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-02T14:08:16.107Z"
+    },
+    {
+      "id": 83,
+      "type": "item_created",
+      "userId": 6,
+      "entityType": "supplier",
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.202",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T23:47:29.166Z"
+    },
+    {
+      "id": 84,
+      "type": "system_error",
+      "userId": 5,
+      "entityId": "16",
+      "entityType": "supplier",
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.245",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-21T01:01:11.584Z"
+    },
+    {
+      "id": 85,
+      "type": "order_placed",
+      "userId": 6,
+      "entityId": "16",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.207",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-18T12:39:27.096Z"
+    },
+    {
+      "id": 86,
+      "type": "user_login",
+      "userId": 5,
+      "entityType": "order",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.195",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-14T18:40:38.176Z"
+    },
+    {
+      "id": 87,
+      "type": "item_updated",
+      "userId": 14,
+      "entityType": "supplier",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.238",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-30T17:57:28.655Z"
+    },
+    {
+      "id": 88,
+      "type": "user_login",
+      "entityType": "supplier",
+      "description": "user login event logged",
+      "ipAddress": "192.168.1.31",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-07T14:33:49.972Z"
+    },
+    {
+      "id": 89,
+      "type": "item_updated",
+      "userId": 10,
+      "entityId": "65",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.30",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-17T17:01:15.220Z"
+    },
+    {
+      "id": 90,
+      "type": "item_updated",
+      "userId": 16,
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.160",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-09T14:17:57.682Z"
+    },
+    {
+      "id": 91,
+      "type": "item_created",
+      "userId": 11,
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.195",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-20T08:34:33.588Z"
+    },
+    {
+      "id": 92,
+      "type": "item_updated",
+      "userId": 4,
+      "entityType": "supplier",
+      "description": "item updated event logged",
+      "ipAddress": "192.168.1.205",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T07:51:47.466Z"
+    },
+    {
+      "id": 93,
+      "type": "item_created",
+      "userId": 4,
+      "description": "item created event logged",
+      "ipAddress": "192.168.1.13",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-16T06:16:34.065Z"
+    },
+    {
+      "id": 94,
+      "type": "order_received",
+      "userId": 18,
+      "entityId": "74",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.21",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-10T19:46:06.947Z"
+    },
+    {
+      "id": 95,
+      "type": "order_placed",
+      "entityType": "item",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.86",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-23T19:23:25.283Z"
+    },
+    {
+      "id": 96,
+      "type": "system_error",
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.66",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-30T00:30:58.237Z"
+    },
+    {
+      "id": 97,
+      "type": "order_received",
+      "userId": 10,
+      "entityId": "48",
+      "entityType": "supplier",
+      "description": "order received event logged",
+      "ipAddress": "192.168.1.127",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-22T16:03:48.365Z"
+    },
+    {
+      "id": 98,
+      "type": "system_error",
+      "userId": 11,
+      "entityId": "38",
+      "entityType": "supplier",
+      "description": "system error event logged",
+      "metadata": {
+        "source": "dashboard",
+        "automated": true
+      },
+      "ipAddress": "192.168.1.210",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-24T21:21:52.172Z"
+    },
+    {
+      "id": 99,
+      "type": "system_error",
+      "userId": 5,
+      "entityId": "24",
+      "entityType": "item",
+      "description": "system error event logged",
+      "ipAddress": "192.168.1.164",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-08-29T08:07:28.226Z"
+    },
+    {
+      "id": 100,
+      "type": "order_placed",
+      "userId": 11,
+      "entityId": "46",
+      "description": "order placed event logged",
+      "ipAddress": "192.168.1.59",
+      "userAgent": "ProcureX Dashboard v1.0",
+      "createdAt": "2025-09-25T08:32:58.909Z"
+    }
+  ],
+  "lastPurchaseOrderId": 15,
+  "lastWorkOrderId": 20,
+  "lastAlertId": 25,
+  "lastSystemEventId": 100
+}

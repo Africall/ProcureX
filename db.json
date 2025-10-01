@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Laptop Dell XPS 13",
+      "sku": "DX13-2020",
+      "quantity": 5,
+      "location": "Warehouse A"
+    },
+    {
+      "id": 2,
+      "name": "Logitech Mouse M720",
+      "sku": "LM-M720",
+      "quantity": 20,
+      "location": "Warehouse B"
+    },
+    {
+      "id": 3,
+      "name": "HP Monitor 24in",
+      "sku": "HP24",
+      "quantity": 8,
+      "location": "Warehouse A"
+    }
+  ]
+}

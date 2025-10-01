@@ -1,0 +1,2 @@
+# Ignore PostgreSQL data volume
+/data/

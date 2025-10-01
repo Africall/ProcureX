@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"group": "build"
+		},
+		{
+			"label": "build-backend",
+			"type": "shell",
+			"command": "npm -C backend run build",
+			"group": "build"
+		}
+	]
+}
