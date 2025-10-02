@@ -367,7 +367,7 @@ router.get('/insights', async (req, res) => {
       insights.push({
         id: 3,
         type: 'cost_optimization',
-        title: `$${overstockValue.toFixed(2)} tied up in excess inventory`,
+        title: `KES ${overstockValue.toFixed(2)} tied up in excess inventory`,
         description: 'Reduce carrying costs by optimizing stock levels for slow-moving items.',
         confidence: 75,
         impact: overstockValue > totalValue * 0.1 ? 'high' : 'medium',
