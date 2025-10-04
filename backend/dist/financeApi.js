@@ -67,7 +67,9 @@ router.get('/counterparties', async (req, res) => {
     try {
         const { type } = req.query;
         let sql = `
-      SELECT id, name, type, email, phone, address, tax_id, is_active, created_at, updated_at
+      SELECT id, display_name as name, type, email, phone,
+             NULL::text as address, NULL::text as tax_id,
+             is_active, created_at, updated_at
       FROM finance.counterparties
       WHERE is_active = true
     `;
@@ -76,7 +78,7 @@ router.get('/counterparties', async (req, res) => {
             sql += ' AND type = $1';
             params.push(type);
         }
-        sql += ' ORDER BY name';
+        sql += ' ORDER BY display_name';
         const result = await (0, financeDb_1.query)(sql, params);
         res.json(result.rows);
     }
@@ -86,12 +88,19 @@ router.get('/counterparties', async (req, res) => {
 });
 router.post('/counterparties', async (req, res) => {
     try {
-        const { name, type, email, phone, address, tax_id } = req.body;
+        const { name, display_name, type, email, phone, external_ref } = req.body;
+        const allowedTypes = ['customer', 'vendor', 'staff', 'other'];
+        const displayName = (display_name || name || '').toString().trim();
+        const ctype = (type || '').toString().trim();
+        if (!displayName)
+            return res.status(400).json({ error: 'display_name (or name) is required' });
+        if (!allowedTypes.includes(ctype))
+            return res.status(400).json({ error: `type must be one of ${allowedTypes.join(', ')}` });
         const result = await (0, financeDb_1.query)(`
-      INSERT INTO finance.counterparties (name, type, email, phone, address, tax_id)
-      VALUES ($1, $2, $3, $4, $5, $6)
+      INSERT INTO finance.counterparties (type, display_name, external_ref, email, phone)
+      VALUES ($1, $2, $3, $4, $5)
       RETURNING *
-    `, [name, type, email || null, phone || null, address || null, tax_id || null]);
+    `, [ctype, displayName, external_ref || null, email || null, phone || null]);
         res.status(201).json(result.rows[0]);
     }
     catch (error) {
@@ -107,9 +116,10 @@ router.get('/invoices', async (req, res) => {
         let sql = `
       SELECT 
         i.id, i.customer_id, i.number, i.invoice_date, i.due_date,
-        i.status, i.subtotal, i.tax_total, i.discount_total, i.total, i.balance,
-        i.memo, i.created_at, i.updated_at,
-        cp.name as customer_name, cp.email as customer_email
+        i.status, i.subtotal, i.tax_total,
+        0::numeric as discount_total, i.total, i.balance,
+        NULL::text as memo, i.currency, i.created_at, i.updated_at,
+        cp.display_name as customer_name, cp.email as customer_email
       FROM finance.invoices i
       LEFT JOIN finance.counterparties cp ON cp.id = i.customer_id
       WHERE 1=1
@@ -140,10 +150,11 @@ router.get('/invoices/:id', async (req, res) => {
         const invoiceResult = await (0, financeDb_1.query)(`
       SELECT 
         i.id, i.customer_id, i.number, i.invoice_date, i.due_date,
-        i.status, i.subtotal, i.tax_total, i.discount_total, i.total, i.balance,
-        i.memo, i.created_at, i.updated_at,
-        cp.name as customer_name, cp.email as customer_email, cp.phone as customer_phone,
-        cp.address as customer_address
+        i.status, i.subtotal, i.tax_total,
+        0::numeric as discount_total, i.total, i.balance,
+        NULL::text as memo, i.currency, i.created_at, i.updated_at,
+        cp.display_name as customer_name, cp.email as customer_email, cp.phone as customer_phone,
+        NULL::text as customer_address
       FROM finance.invoices i
       LEFT JOIN finance.counterparties cp ON cp.id = i.customer_id
       WHERE i.id = $1
@@ -153,7 +164,13 @@ router.get('/invoices/:id', async (req, res) => {
         }
         const itemsResult = await (0, financeDb_1.query)(`
       SELECT 
-        id, item_description, quantity, unit_price, tax_rate_id, discount, total
+        id,
+        description as item_description,
+        qty as quantity,
+        unit_price,
+        tax_rate_id,
+        0::numeric as discount,
+        line_total as total
       FROM finance.invoice_items
       WHERE invoice_id = $1
       ORDER BY id
@@ -275,9 +292,10 @@ router.get('/bills', async (req, res) => {
         let sql = `
       SELECT 
         b.id, b.vendor_id, b.number, b.bill_date, b.due_date,
-        b.status, b.subtotal, b.tax_total, b.discount_total, b.total, b.balance,
-        b.memo, b.created_at, b.updated_at,
-        cp.name as vendor_name, cp.email as vendor_email
+        b.status, b.subtotal, b.tax_total,
+        0::numeric as discount_total, b.total, b.balance,
+        NULL::text as memo, b.currency, b.created_at, b.updated_at,
+        cp.display_name as vendor_name, cp.email as vendor_email
       FROM finance.bills b
       LEFT JOIN finance.counterparties cp ON cp.id = b.vendor_id
       WHERE 1=1
@@ -308,10 +326,11 @@ router.get('/bills/:id', async (req, res) => {
         const billResult = await (0, financeDb_1.query)(`
       SELECT 
         b.id, b.vendor_id, b.number, b.bill_date, b.due_date,
-        b.status, b.subtotal, b.tax_total, b.discount_total, b.total, b.balance,
-        b.memo, b.created_at, b.updated_at,
-        cp.name as vendor_name, cp.email as vendor_email, cp.phone as vendor_phone,
-        cp.address as vendor_address
+        b.status, b.subtotal, b.tax_total,
+        0::numeric as discount_total, b.total, b.balance,
+        NULL::text as memo, b.currency, b.created_at, b.updated_at,
+        cp.display_name as vendor_name, cp.email as vendor_email, cp.phone as vendor_phone,
+        NULL::text as vendor_address
       FROM finance.bills b
       LEFT JOIN finance.counterparties cp ON cp.id = b.vendor_id
       WHERE b.id = $1
@@ -321,7 +340,13 @@ router.get('/bills/:id', async (req, res) => {
         }
         const itemsResult = await (0, financeDb_1.query)(`
       SELECT 
-        id, item_description, quantity, unit_price, tax_rate_id, discount, total
+        id,
+        description as item_description,
+        qty as quantity,
+        unit_price,
+        tax_rate_id,
+        0::numeric as discount,
+        line_total as total
       FROM finance.bill_items
       WHERE bill_id = $1
       ORDER BY id
@@ -418,23 +443,32 @@ router.post('/bills/:id/record-payment', async (req, res) => {
 // ============================================================================
 router.get('/payments', async (req, res) => {
     try {
-        const { type, account_id } = req.query;
+        const { type, method, account_id } = req.query;
         let sql = `
       SELECT 
-        p.id, p.payment_date, p.amount, p.account_id, p.counterparty_id,
-        p.reference, p.memo, p.type, p.created_at, p.updated_at,
+        p.id,
+        p.paid_at as payment_date,
+        p.amount,
+        p.account_id,
+        p.payee_id as counterparty_id,
+        p.reference,
+        p.method as type,
+        p.currency,
+        p.created_at,
+        p.created_at as updated_at,
         a.name as account_name,
-        cp.name as counterparty_name
+        cp.display_name as counterparty_name
       FROM finance.payments p
       LEFT JOIN finance.accounts a ON a.id = p.account_id
-      LEFT JOIN finance.counterparties cp ON cp.id = p.counterparty_id
+      LEFT JOIN finance.counterparties cp ON cp.id = p.payee_id
       WHERE 1=1
     `;
         const params = [];
         let paramCount = 1;
-        if (type) {
-            sql += ` AND p.type = $${paramCount}`;
-            params.push(type);
+        const methodFilter = (method || type);
+        if (methodFilter) {
+            sql += ` AND p.method = $${paramCount}`;
+            params.push(methodFilter);
             paramCount++;
         }
         if (account_id) {
@@ -442,7 +476,7 @@ router.get('/payments', async (req, res) => {
             params.push(account_id);
             paramCount++;
         }
-        sql += ' ORDER BY p.payment_date DESC, p.created_at DESC';
+        sql += ' ORDER BY p.paid_at DESC, p.created_at DESC';
         const result = await (0, financeDb_1.query)(sql, params);
         res.json(result.rows);
     }
@@ -452,13 +486,23 @@ router.get('/payments', async (req, res) => {
 });
 router.post('/payments', async (req, res) => {
     try {
-        const { payment_date, amount, account_id, counterparty_id, reference, memo, type } = req.body;
+        const { payment_date, amount, account_id, counterparty_id, // backward-compat -> payee_id
+        reference, memo, type, method, payee_type, currency } = req.body;
+        if (amount == null || account_id == null) {
+            return res.status(400).json({ error: 'amount and account_id are required' });
+        }
+        const allowedMethods = ['mpesa', 'bank', 'cash', 'card', 'other'];
+        const methodValue = (method || type || 'other').toString().toLowerCase();
+        const methodFinal = allowedMethods.includes(methodValue) ? methodValue : 'other';
+        const payeeTypeFinal = (payee_type || 'other').toString().toLowerCase();
+        const paidAt = payment_date || new Date().toISOString();
+        const metaObj = memo ? { memo } : {};
         const result = await (0, financeDb_1.query)(`
       INSERT INTO finance.payments 
-        (payment_date, amount, account_id, counterparty_id, reference, memo, type)
-      VALUES ($1, $2, $3, $4, $5, $6, $7)
+        (paid_at, amount, account_id, payee_id, reference, method, payee_type, currency, meta)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, COALESCE($8, 'KES'), $9::jsonb)
       RETURNING *
-    `, [payment_date, amount, account_id, counterparty_id || null, reference || null, memo || null, type || 'other']);
+    `, [paidAt, amount, account_id, counterparty_id || null, reference || null, methodFinal, payeeTypeFinal, currency || null, JSON.stringify(metaObj)]);
         res.status(201).json(result.rows[0]);
     }
     catch (error) {

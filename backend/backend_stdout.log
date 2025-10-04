@@ -1,0 +1,200 @@
+ProcureX backend listening on 4001 (development) bound to 127.0.0.1 in 7ms
+Initializing LowDB at: C:\Users\san\ProcureX\ProcureX-2\backend\db.json
+LowDB database ready
+Enterprise data already exists, skipping seed
+✅ Finance DB connected
+Executed query {
+  text: 'SELECT COUNT(*) as count FROM finance.chart_of_acc',
+  duration: 26,
+  rows: 1
+}
+✅ Finance data already seeded
+ProcureX init complete in 40ms { db: true, cache: true }
+[2fba6f7e-2243-40a1-9064-8fc8a487c397] GET /api/fx/latest {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[2fba6f7e-2243-40a1-9064-8fc8a487c397] Readiness check: { isReady: true, isHealthPath: false, path: '/api/fx/latest' }
+[0mGET /api/fx/latest [32m200[0m 5.911 ms - 68[0m
+[0cc4f28c-bf62-4b97-9e77-07c5bb0655e6] GET /api/fx/latest {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[0cc4f28c-bf62-4b97-9e77-07c5bb0655e6] Readiness check: { isReady: true, isHealthPath: false, path: '/api/fx/latest' }
+[0mGET /api/fx/latest [32m200[0m 2.217 ms - 68[0m
+[84a9a948-4587-4cba-a28c-34252db7200e] GET /api/finance/accounts {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001',
+    connection: 'Keep-Alive'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[84a9a948-4587-4cba-a28c-34252db7200e] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/accounts' }
+✅ Finance DB connected
+Executed query {
+  text: '\n      SELECT \n        a.id, a.name, a.kind, a.cur',
+  duration: 28,
+  rows: 3
+}
+[0mGET /api/finance/accounts [32m200[0m 31.621 ms - 814[0m
+[d865664b-f5bd-48e8-9d2d-78c4ef694d0e] GET /api/finance/tax-rates {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[d865664b-f5bd-48e8-9d2d-78c4ef694d0e] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/tax-rates' }
+Executed query {
+  text: '\n      SELECT id, name, rate_percent, is_withholdi',
+  duration: 8,
+  rows: 3
+}
+[0mGET /api/finance/tax-rates [32m200[0m 10.680 ms - 567[0m
+[2c6ebd4f-ad3a-46e0-9aa1-7dd680389c93] GET /api/finance/counterparties {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[2c6ebd4f-ad3a-46e0-9aa1-7dd680389c93] Readiness check: {
+  isReady: true,
+  isHealthPath: false,
+  path: '/api/finance/counterparties'
+}
+[0mGET /api/finance/counterparties [31m500[0m 8.695 ms - 42[0m
+[92e4f1ec-0948-4ce8-be40-ac27210d52b5] GET /api/finance/invoices {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[92e4f1ec-0948-4ce8-be40-ac27210d52b5] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/invoices' }
+✅ Finance DB connected
+[0mGET /api/finance/invoices [31m500[0m 18.918 ms - 50[0m
+[4c2154a3-3492-4747-83b4-50878c8f3c0f] GET /api/finance/bills {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[4c2154a3-3492-4747-83b4-50878c8f3c0f] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/bills' }
+✅ Finance DB connected
+[0mGET /api/finance/bills [31m500[0m 16.904 ms - 50[0m
+[15749016-aca1-4ec0-9431-80f005eca95c] GET /api/finance/accounts {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[15749016-aca1-4ec0-9431-80f005eca95c] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/accounts' }
+✅ Finance DB connected
+Executed query {
+  text: '\n      SELECT \n        a.id, a.name, a.kind, a.cur',
+  duration: 15,
+  rows: 3
+}
+[0mGET /api/finance/accounts [32m200[0m 18.135 ms - 814[0m
+[cac5208e-2426-4e03-923b-3b0036c8cb75] GET /api/finance/tax-rates {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[cac5208e-2426-4e03-923b-3b0036c8cb75] Readiness check: { isReady: true, isHealthPath: false, path: '/api/finance/tax-rates' }
+Executed query {
+  text: '\n      SELECT id, name, rate_percent, is_withholdi',
+  duration: 2,
+  rows: 3
+}
+[0mGET /api/finance/tax-rates [32m200[0m 5.691 ms - 567[0m
+[f67d0725-17b7-4cc6-a8ed-da73c97dd9c4] GET /api/finance/counterparties {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[f67d0725-17b7-4cc6-a8ed-da73c97dd9c4] Readiness check: {
+  isReady: true,
+  isHealthPath: false,
+  path: '/api/finance/counterparties'
+}
+[0mGET /api/finance/counterparties [31m500[0m 3.939 ms - 42[0m
+[74b2b93b-64c7-4c2c-a81f-2125996d81b1] GET /ready {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001',
+    connection: 'Keep-Alive'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[0mGET /ready [32m200[0m 1.124 ms - 34[0m
+[6c2aa55e-5d61-422e-accd-b43351f3b946] GET /api/finance/counterparties {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001',
+    connection: 'Keep-Alive'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[6c2aa55e-5d61-422e-accd-b43351f3b946] Readiness check: {
+  isReady: true,
+  isHealthPath: false,
+  path: '/api/finance/counterparties'
+}
+✅ Finance DB connected
+[0mGET /api/finance/counterparties [31m500[0m 17.453 ms - 42[0m
+[f3dd746b-7556-4041-9a33-1b06dfa8b649] GET /api/finance/counterparties {
+  headers: {
+    'user-agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6725',
+    host: '127.0.0.1:4001',
+    connection: 'Keep-Alive'
+  },
+  body: undefined,
+  query: {},
+  ip: '127.0.0.1'
+}
+[f3dd746b-7556-4041-9a33-1b06dfa8b649] Readiness check: {
+  isReady: true,
+  isHealthPath: false,
+  path: '/api/finance/counterparties'
+}
+✅ Finance DB connected
+[0mGET /api/finance/counterparties [31m500[0m 15.990 ms - 42[0m

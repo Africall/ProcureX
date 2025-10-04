@@ -1,5 +1,9 @@
 {
   "base": "KES",
-  "rates": {},
-  "fetchedAt": 1759573735938
+  "rates": {
+    "USD": 0.0073,
+    "EUR": 0.0068,
+    "GBP": 0.0054
+  },
+  "fetchedAt": 1759578203706
 }

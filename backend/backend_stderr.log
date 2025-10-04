@@ -1,0 +1,138 @@
+Query error: error: column "name" does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:80:24 {
+  length: 104,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '19',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Query error: error: column i.discount_total does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:130:24 {
+  length: 115,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '126',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Query error: error: column b.discount_total does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:298:24 {
+  length: 115,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '121',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Query error: error: column "name" does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:80:24 {
+  length: 104,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '19',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Query error: error: column "name" does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:80:24 {
+  length: 104,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '19',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Query error: error: column "name" does not exist
+    at C:\Users\san\ProcureX\ProcureX-2\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async query (C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeDb.js:27:21)
+    at async C:\Users\san\ProcureX\ProcureX-2\backend\dist\financeApi.js:80:24 {
+  length: 104,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '19',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}

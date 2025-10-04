@@ -12,6 +12,7 @@ const router = express_1.default.Router();
 const CACHE_TTL_MS = 1000 * 60 * 60; // 1 hour
 const CACHE_FILE = path_1.default.resolve(__dirname, '../db/fx_cache.json');
 let cache = null;
+const FALLBACK_RATES = { USD: 0.0073, EUR: 0.0068, GBP: 0.0054 };
 function loadCacheFromFile() {
     try {
         if (fs_1.default.existsSync(CACHE_FILE)) {
@@ -40,7 +41,8 @@ async function fetchRatesFromProvider(base = 'KES', symbols = ['USD', 'EUR', 'GB
     if (!res.ok)
         throw new Error(`FX provider error: ${res.status}`);
     const body = await res.json();
-    return { base: body.base || base, rates: body.rates || {}, fetchedAt: Date.now() };
+    const rates = (body && body.rates) ? body.rates : {};
+    return { base: body.base || base, rates, fetchedAt: Date.now() };
 }
 // GET /api/fx/latest?base=KES&symbols=USD,EUR
 router.get('/latest', async (req, res) => {
@@ -63,7 +65,10 @@ router.get('/latest', async (req, res) => {
         }
         // fetch fresh
         const fresh = await fetchRatesFromProvider(base, symbols);
-        cache = { base: fresh.base, rates: fresh.rates, fetchedAt: fresh.fetchedAt };
+        // If provider returns empty rates, fall back to static defaults for requested symbols
+        const hasRates = fresh.rates && Object.keys(fresh.rates).length > 0;
+        const rates = hasRates ? fresh.rates : Object.fromEntries(symbols.map(s => [s, FALLBACK_RATES[s] || null]).filter(([, v]) => typeof v === 'number'));
+        cache = { base: fresh.base, rates, fetchedAt: fresh.fetchedAt };
         try {
             persistCacheToFile();
         }
@@ -76,7 +81,12 @@ router.get('/latest', async (req, res) => {
         if (cache) {
             return res.status(200).json({ source: 'stale_cache', base: cache.base, rates: cache.rates, fetchedAt: cache.fetchedAt, warning: 'provider_unavailable' });
         }
-        res.status(502).json({ error: 'failed_to_fetch_fx_rates', detail: err.message });
+        // No cache -> provide fallback so UI remains functional
+        const base = req.query.base || 'KES';
+        const symbolsQ = req.query.symbols || 'USD,EUR,GBP';
+        const symbols = symbolsQ.split(',').map(s => s.trim().toUpperCase()).filter(Boolean);
+        const rates = Object.fromEntries(symbols.map(s => [s, FALLBACK_RATES[s] || null]).filter(([, v]) => typeof v === 'number'));
+        return res.status(200).json({ source: 'fallback', base, rates, fetchedAt: Date.now(), warning: 'provider_unavailable' });
     }
 });
 exports.default = router;
