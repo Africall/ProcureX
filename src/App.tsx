@@ -23,6 +23,7 @@ import { useTheme } from './theme'
 import AssistantPanel from './components/AssistantPanel'
 import { useAssistant } from './assistantStore'
 import ProfileMenu from './components/ProfileMenu'
+import CurrencySelector from './components/CurrencySelector'
 
 function Header(){
   const { theme, toggle } = useTheme()
@@ -31,6 +32,7 @@ function Header(){
     <header className="header" style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
       <div>ProcureX Inventory</div>
       <div style={{display:'flex',alignItems:'center',gap:12}}>
+        <CurrencySelector />
         <button className="btn-secondary" onClick={toggle} title={`Switch to ${theme==='dark'?'light':'dark'} mode`}>{theme==='dark' ? '🌙' : '☀️'}</button>
         <button className="btn-secondary" onClick={toggleAssistant} title="Open AI Assistant">🤖</button>
         <ProfileMenu userName="Admin User" userEmail="admin@procurex.com" userRole="Administrator" />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useFormatCurrency } from '../../utils/currency'
 import { LineChart, Line, ResponsiveContainer } from 'recharts'
 import { useDashboardKPIs } from '../../hooks/useDashboard'
 import { Kpi } from '../../schema/dashboard'
@@ -36,10 +37,13 @@ interface KPICardProps {
 }
 
 const KPICard: React.FC<KPICardProps> = ({ kpi }) => {
+  const formatCurrency = useFormatCurrency()
+
   const formatValue = (value: number, key: string) => {
     switch (key) {
       case 'spend':
-        return `Kes${(value / 1000).toFixed(0)}k`
+        // spend is a monetary value
+        return formatCurrency(value)
       case 'items':
       case 'lowStock':
       case 'pendingPOs':

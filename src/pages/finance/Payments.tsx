@@ -1,6 +1,7 @@
 import React from 'react'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { getPayments, getFinanceAccounts, createPayment, getCounterparties } from '../../api'
+import { useFormatCurrency } from '../../utils/currency'
 
 interface Payment {
   id: string
@@ -77,9 +78,7 @@ export default function Payments() {
     }
   })
 
-  const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES' }).format(amount)
-  }
+  const formatCurrency = useFormatCurrency()
 
   const getPaymentTypeColor = (type: string) => {
     switch (type) {

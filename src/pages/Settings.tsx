@@ -1,4 +1,5 @@
 import React from 'react'
+import { useCurrencyStore } from '../stores/currencyStore'
 
 export default function Settings() {
   const [settings, setSettings] = React.useState({
@@ -22,6 +23,17 @@ export default function Settings() {
     console.log('Saving settings:', settings)
     alert('Settings saved successfully!')
   }
+
+  // map some simple example exchange rates (1 KES => X display currency)
+  const exampleRates: Record<string, number> = {
+    KES: 1,
+    USD: 0.0073, // example: 1 KES = 0.0073 USD
+    EUR: 0.0068,
+    GBP: 0.0054
+  }
+
+  const setCurrencyGlobal = useCurrencyStore(s => s.setCurrency)
+  const setRateGlobal = useCurrencyStore(s => s.setRate)
 
   return (
     <div style={{ padding: 24 }}>
@@ -116,7 +128,12 @@ export default function Settings() {
                   <span>Default Currency</span>
                   <select
                     value={settings.currency}
-                    onChange={(e) => setSettings({ ...settings, currency: e.target.value })}
+                    onChange={(e) => {
+                      const c = e.target.value
+                      setSettings({ ...settings, currency: c })
+                      setCurrencyGlobal(c)
+                      setRateGlobal(exampleRates[c] ?? 1)
+                    }}
                   >
                     <option value="KES">KES - Kenyan Shilling</option>
                     <option value="USD">USD - US Dollar</option>

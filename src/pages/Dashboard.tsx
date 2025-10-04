@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useFormatCurrency } from '../utils/currency'
 import { useDashboardStatus } from '../hooks/useDashboard'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 
@@ -30,6 +31,7 @@ const productsData = [
 const Dashboard: React.FC = () => {
   const status = useDashboardStatus()
   const [timePeriod, setTimePeriod] = useState<'weekly' | 'monthly' | 'yearly'>('monthly')
+  const fmt = useFormatCurrency()
 
   return (
     <div style={{ padding: '24px' }}>
@@ -78,7 +80,7 @@ const Dashboard: React.FC = () => {
             <div>
               <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>Total Sales</h3>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginTop: '4px' }}>
-                <span style={{ fontSize: '24px', fontWeight: 'bold' }}>$463,602.39</span>
+                <span style={{ fontSize: '24px', fontWeight: 'bold' }}>{fmt(463602.39)}</span>
                 <span style={{ fontSize: '14px', color: '#10b981', fontWeight: '600' }}>↗ +18%</span>
               </div>
             </div>
@@ -147,7 +149,7 @@ const Dashboard: React.FC = () => {
                   border: '1px solid #e5e7eb',
                   borderRadius: '8px'
                 }}
-                formatter={(value: number) => [`$${value.toLocaleString()}`, 'Sales']}
+                formatter={(value: number) => [fmt(value), 'Sales']}
               />
               <Area type="monotone" dataKey="sales" stroke="#3b82f6" strokeWidth={2} fill="url(#salesGradient)" />
             </AreaChart>
@@ -231,7 +233,7 @@ const Dashboard: React.FC = () => {
                   {product.destination}
                 </td>
                 <td style={{ color: '#64748b' }}>{product.date}</td>
-                <td style={{ fontWeight: '600' }}>{product.cost}</td>
+                <td style={{ fontWeight: '600' }}>{fmt(Number(product.cost.replace(/[^0-9.-]+/g, '')))}</td>
                 <td>
                   <span className={`status-pill ${
                     product.status === 'Completed' ? 'status-paid' :

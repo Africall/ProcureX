@@ -5,6 +5,7 @@ import suppliersRouter from './suppliers'
 import dashboardRouter from './dashboardApi'
 import financeRouter from './financeApi'
 import marketplaceRouter from './marketplace'
+import fxRouter from './fxApi'
 import { seedEnterpriseData } from './seedData'
 import { seedFinanceData } from './financeDb'
 import helmet from 'helmet'
@@ -121,6 +122,7 @@ app.use('/api/suppliers', suppliersRouter)
 app.use('/api/dashboard', dashboardRouter)
 app.use('/api/finance', financeRouter)
 app.use('/api/marketplace', marketplaceRouter)
+app.use('/api/fx', fxRouter)
 
 // SPA fallback: send index.html for non-API routes
 if (NODE_ENV === 'production') {
@@ -161,9 +163,14 @@ app.use((err: any, req: any, res: any, _next: any) => {
 let server: any
 if (NODE_ENV !== 'test') {
   const start = Date.now()
-  server = app.listen(PORT, () => {
-    console.log(`ProcureX backend listening on ${PORT} (${NODE_ENV}) in ${Date.now() - start}ms`)
-    // Kick off init WITHOUT blocking the socket
+  // Bind explicitly to 127.0.0.1 in dev to avoid IPv6/localhost resolution issues on Windows
+  const listenHost = NODE_ENV === 'production' ? undefined : '127.0.0.1'
+  const portNum = Number(PORT)
+  server = listenHost ? app.listen(portNum, listenHost, () => {
+    console.log(`ProcureX backend listening on ${portNum} (${NODE_ENV}) bound to ${listenHost} in ${Date.now() - start}ms`)
+    void init()
+  }) : app.listen(portNum, () => {
+    console.log(`ProcureX backend listening on ${portNum} (${NODE_ENV}) in ${Date.now() - start}ms`)
     void init()
   })
 }

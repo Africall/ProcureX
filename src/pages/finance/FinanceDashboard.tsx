@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { getFinanceKPIs } from '../../api'
+import { useFormatCurrency } from '../../utils/currency'
 
 interface FinanceKPIs {
   revenue: number
@@ -20,9 +21,7 @@ export default function FinanceDashboard() {
 
   if (isLoading) return <div>Loading...</div>
 
-  const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES' }).format(amount)
-  }
+  const formatCurrency = useFormatCurrency()
 
   const netCashflow = (kpis?.cash_on_hand || 0) + (kpis?.accounts_receivable || 0) - (kpis?.accounts_payable || 0)
 

@@ -8,8 +8,11 @@ const cors_1 = __importDefault(require("cors"));
 const items_1 = __importDefault(require("./items"));
 const suppliers_1 = __importDefault(require("./suppliers"));
 const dashboardApi_1 = __importDefault(require("./dashboardApi"));
-const finance_1 = __importDefault(require("./finance"));
+const financeApi_1 = __importDefault(require("./financeApi"));
+const marketplace_1 = __importDefault(require("./marketplace"));
+const fxApi_1 = __importDefault(require("./fxApi"));
 const seedData_1 = require("./seedData");
+const financeDb_1 = require("./financeDb");
 const helmet_1 = __importDefault(require("helmet"));
 const morgan_1 = __importDefault(require("morgan"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
@@ -24,6 +27,8 @@ async function connectDB() {
     // e.g., await prisma.$connect()
     // Seed enterprise data for dashboard
     await (0, seedData_1.seedEnterpriseData)();
+    // Seed finance data in PostgreSQL
+    await (0, financeDb_1.seedFinanceData)();
     ready.db = true;
 }
 async function connectCache() {
@@ -101,7 +106,9 @@ if (config_1.NODE_ENV === 'production') {
 app.use('/api/items', items_1.default);
 app.use('/api/suppliers', suppliers_1.default);
 app.use('/api/dashboard', dashboardApi_1.default);
-app.use('/api/finance', finance_1.default);
+app.use('/api/finance', financeApi_1.default);
+app.use('/api/marketplace', marketplace_1.default);
+app.use('/api/fx', fxApi_1.default);
 // SPA fallback: send index.html for non-API routes
 if (config_1.NODE_ENV === 'production') {
     app.get(/^\/(?!api|health|live|ready).*/, (_req, res) => {
@@ -137,9 +144,14 @@ app.use((err, req, res, _next) => {
 let server;
 if (config_1.NODE_ENV !== 'test') {
     const start = Date.now();
-    server = app.listen(config_1.PORT, () => {
-        console.log(`ProcureX backend listening on ${config_1.PORT} (${config_1.NODE_ENV}) in ${Date.now() - start}ms`);
-        // Kick off init WITHOUT blocking the socket
+    // Bind explicitly to 127.0.0.1 in dev to avoid IPv6/localhost resolution issues on Windows
+    const listenHost = config_1.NODE_ENV === 'production' ? undefined : '127.0.0.1';
+    const portNum = Number(config_1.PORT);
+    server = listenHost ? app.listen(portNum, listenHost, () => {
+        console.log(`ProcureX backend listening on ${portNum} (${config_1.NODE_ENV}) bound to ${listenHost} in ${Date.now() - start}ms`);
+        void init();
+    }) : app.listen(portNum, () => {
+        console.log(`ProcureX backend listening on ${portNum} (${config_1.NODE_ENV}) in ${Date.now() - start}ms`);
         void init();
     });
 }
